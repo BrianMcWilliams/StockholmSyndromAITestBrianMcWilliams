@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5568d9b0528724b9d135b5ecd90eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: C:\Dev\StockholmSyndromeAITest\StockholmSyndrimeAITest\Level.txt
+  m_Path: 
   m_EnemyGhostBlue: {fileID: 3429123439850887059, guid: 7125967e1b39cca4d84f06f37c318c04,
     type: 3}
   m_EnemyGhostRed: {fileID: 5740215665351024456, guid: 9286dbaba13657f43835ed209e0e49fa,

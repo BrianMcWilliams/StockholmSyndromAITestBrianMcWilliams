@@ -144,7 +144,18 @@ public class LevelGenerator : MonoBehaviour
         //The first 'n' bytes of the file are the Header, this contains data to help us read the level.
         int headerSize = 42;//Marshal.SizeOf(typeof(Header));
         byte[] headerByteArray = new byte[headerSize];
-        FileStream fs = File.OpenRead(m_Path);
+
+        string filePath;
+        if(!String.IsNullOrWhiteSpace(m_Path))
+        {
+            filePath = m_Path;
+        }
+        else
+        {
+            filePath = Application.dataPath + "/Level.txt";
+        }
+        FileStream fs = File.OpenRead(filePath);
+        
         fs.Read(headerByteArray, 0, headerSize);
 
         string headerString = Encoding.UTF8.GetString(headerByteArray);
