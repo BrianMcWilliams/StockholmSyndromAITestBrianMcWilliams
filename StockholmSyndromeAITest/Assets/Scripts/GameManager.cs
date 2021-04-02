@@ -69,6 +69,8 @@ public class GameManager : MonoBehaviour
         m_RestartButton.SetActive(false);
 
         InitGame();
+
+        m_GameBoard.m_Player.Points = 0;
     }
     public void SwitchCamera()
     {
